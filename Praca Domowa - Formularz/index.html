@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularz Testowy</title>
+    <meta name="author" content="Patryk Rybak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="FormCenter">
+      <form action="index.html" method="post">
+        <span id="msg">Przykładowe dane rejestracji:</span>
+        <fieldset>
+          <legend>Typowe Kontrolki:</legend>
+            <label for="fname">Login:</label>
+            <input type="text" id="fname" name="fname" placeholder="Przykładowy tekst"><br><br>
+            <label for="lname">Hasło: </label>
+            <input type="password" id="lname" name="lname"><br><br>
+            <label class="mb">Radio:<input type="radio"></label><br><br>
+            <label class="mb">Checkbox:<input type="checkbox" checked></label><br><br>
+        </fieldset>
+        <fieldset>
+          <legend>Rzadkie kontrolki:</legend>
+          <label for="datemax">Data:</label>
+          <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+          <label for="datemax">Pliki:</label>
+          <input type="file" id="files" name="files" multiple><br><br>
+          <label for="datemax">email:</label>
+          <input type="email"><br><br>
+          <label for="datemax">CYFERKI:</label>
+          <input type="number" id="points" name="points" step="3"><br><br>
+          <label for="datemax">Wybór:</label>
+          <select id="cars">
+            <option value="Albert">Albert</option>
+            <option value="Adam">Adam</option>
+            <option value="Alojzy">Alojzy</option>
+            <option value="Ambroży">Ambroży</option>
+            <option value="Alfred">Alfred</option>
+            <option value="Arnold">Arnold</option>
+          </select><br><br>
+          <label for="datemax">Kolor:</label>
+          <input type="color"><br><br>
+        </fieldset>
+        <fieldset>
+          <legend>I przycisk do tego :-)</legend>
+            <input type="button" name="btn" value="Prześlij mnie!">
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
